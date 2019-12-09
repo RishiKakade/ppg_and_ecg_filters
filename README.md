@@ -1,8 +1,8 @@
 # ppg_and_ecg_filters
 A collection of subroutines and functions for removing noise and processing ECG and PPG signals I found useful.
 
-Some background, my ECG sensor had a sampling frequency of 250hx and my [PPG](https://www.nonin.com/products/oem3/) had one of 75hz 
-#### Transfer Functions
+Some background, my ECG sensor had a sampling frequency of 250hz and my [PPG](https://www.nonin.com/products/oem3/) had one of 75hz 
+### Transfer Functions
 
 ##### Chebyshev Lowpass
   - Order 2
@@ -24,7 +24,7 @@ Some background, my ECG sensor had a sampling frequency of 250hx and my [PPG](ht
   - Order 2
   - In North America, the electrical grid operates at 60Hz
 
-#### Other Processing Tools
+### Other Processing Tools
 ##### QRS Peak Detection
   - My method of finding R peaks is pretty much returns indicies with ECG measurments of >50mV. Theres not really any sense in applying complicated peak detection algs if its a clean signal
 
