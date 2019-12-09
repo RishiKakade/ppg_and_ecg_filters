@@ -18,7 +18,7 @@ Some background, my ECG sensor had a sampling frequency of 250hz and my [PPG](ht
 
 ##### Butterworth Bandpass
   - Order 2
-  - Reasonable passband is 0.5-150Hz
+  - Reasonable passband is 0.5-150Hz. [Here's why](https://www.researchgate.net/publication/303155606_A_survey_of_noise_removal_techniques_for_ecg_signals
 
 ##### Butterworth Bandstop
   - Order 2
