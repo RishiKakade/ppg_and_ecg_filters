@@ -26,10 +26,10 @@ Some background, my ECG sensor had a sampling frequency of 250hz and my [PPG](ht
 
 ### Other Processing Tools
 ##### QRS Peak Detection
-  - My method of finding R peaks is pretty much returns indicies with ECG measurments of >50mV. Theres not really any sense in applying complicated peak detection algs if its a clean signal
+  - My method of finding R peaks is pretty much returns indicies with ECG measurments of >750uV. Theres not really any sense in applying complicated peak detection algs if its a clean signal
 
 ##### Saturation Correction
-  - My ECG had an upper limit of 50k mV
+  - My ECG had an upper limit of 50k uV
 
 ##### Moving Median Filter
   - This one is more useful for PPG signals. You could use a bandpass+notch but its not realy necessary if you're just trying to compute heart rate or something. The R peak detection algorithm works here too, just with a different bound 
