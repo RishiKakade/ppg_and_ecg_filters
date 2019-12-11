@@ -32,8 +32,8 @@ Some background, my ECG sensor had a sampling frequency of 250hz and my [PPG](ht
   - My ECG had an upper limit of 50k uV
 
 ##### Moving Median Filter
-  - This one is more useful for PPG signals. You could use a bandpass+notch but its not realy necessary if you're just trying to compute heart rate or something. The R peak detection algorithm works here too, just with a different bound 
+  - This one is more useful for PPG signals. You could use a bandpass+notch but its not really necessary if you're just trying to compute heart rate or something. The R peak detection works here too, just with different bounds
 
 ##### BPM and HR Variance
   - BPM is just the number of R peaks per minute. You could use Q or S peaks too I guess, but R peaks are more prominent thus likely give a more accurate heart rate
-  - Variance just uses a built in numpy function. This is more useful on time frames where you can approximate as roughly linear. Variance doesn't tell you anything if a person jumps out of bed and goes for crossfit!
+  - Variance just uses a built in numpy function. This is more useful on time frames where you can approximate as being roughly constant. Variance doesn't tell you anything if a person jumps out of bed and goes for crossfit!
